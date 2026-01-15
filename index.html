@@ -182,7 +182,202 @@
 
         </div>
 
-        <a href="index.html" class="btn-action">GOT IT? LOGIN NOW 🔐</a>
+        <!-- TOMBOL LOGIN LANGSUNG KE VERCEL -->
+        <a href="https://beenonexam.vercel.app" class="btn-action">GOT IT? LOGIN NOW 🔐</a>
+
+        <div class="footer">
+            <p>System by <a href="https://github.com/ghaffarsyafiq-arch" target="_blank">Sir Yaeon</a> x B$4BE!N</p>
+        </div>
+
+    </div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Protocol - Been On Exam</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* === TEMA: MOBILE PRINCESS COQUETTE (Copy dari Index) === */
+        :root {
+            --bg-body: #FFF0F5;
+            --primary: #FF69B4;
+            --primary-soft: #FFB7C5;
+            --primary-dark: #D81B60;
+            --text-main: #5D4037;
+            --text-muted: #9E8888;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; outline: none; -webkit-tap-highlight-color: transparent; }
+        
+        body { 
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            /* Pattern Pita Kecil */
+            background-image: radial-gradient(#FFC0CB 2px, transparent 2px);
+            background-size: 30px 30px;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 40px;
+            padding: 30px;
+            border: 4px solid var(--primary-soft);
+            box-shadow: 0 15px 40px rgba(255, 182, 193, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3 { font-family: 'Luckiest Guy', cursive; color: var(--primary); letter-spacing: 1px; }
+        h1 { font-size: 2.5rem; text-align: center; margin-bottom: 10px; text-shadow: 3px 3px 0px #FFE4E1; }
+        h2 { font-size: 1.8rem; margin-top: 30px; margin-bottom: 15px; border-bottom: 3px dashed var(--primary-soft); display: inline-block; }
+        p { margin-bottom: 15px; font-weight: 600; color: var(--text-main); }
+
+        /* HERO SECTION */
+        .hero { text-align: center; margin-bottom: 40px; }
+        .hero-badge {
+            background: var(--primary); color: white; padding: 5px 20px; 
+            border-radius: 20px; font-weight: bold; font-size: 0.9rem;
+            display: inline-block; margin-bottom: 10px;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        /* CARDS */
+        .info-card {
+            background: #FFF; border-radius: 20px; padding: 20px;
+            margin-bottom: 20px; border: 2px solid #FFF0F5;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+        }
+        .info-card:hover { transform: translateY(-5px); border-color: var(--primary-soft); }
+        .info-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+
+        /* DEVICE TABS */
+        .device-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        
+        .device-box {
+            background: #FAFAFA; border-radius: 25px; padding: 25px;
+            border: 2px dashed var(--text-muted); position: relative;
+        }
+        .device-title { font-weight: 800; color: var(--primary-dark); margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+        
+        .step-list { list-style: none; padding-left: 0; }
+        .step-list li {
+            position: relative; padding-left: 30px; margin-bottom: 10px; font-size: 0.95rem;
+        }
+        .step-list li::before {
+            content: '👉'; position: absolute; left: 0; top: 0;
+        }
+
+        /* BUTTONS */
+        .btn-action {
+            display: block; width: 100%; text-align: center;
+            background: var(--primary); color: white; text-decoration: none;
+            padding: 15px; border-radius: 50px; font-weight: 700;
+            margin-top: 30px; transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.4);
+        }
+        .btn-action:hover { transform: scale(1.02); background: var(--primary-dark); }
+
+        .btn-dm {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            color: white; padding: 10px 20px; border-radius: 15px; text-decoration: none;
+            display: inline-flex; align-items: center; gap: 8px; font-weight: bold;
+            margin-top: 10px; box-shadow: 0 5px 15px rgba(220, 39, 67, 0.3);
+        }
+
+        /* HIGHLIGHT */
+        .highlight { background: #FFE4E1; padding: 2px 8px; border-radius: 5px; color: var(--primary-dark); }
+        .warn { color: #D81B60; font-weight: 800; }
+
+        /* FOOTER */
+        .footer { text-align: center; margin-top: 50px; font-size: 0.8rem; color: var(--text-muted); }
+        .footer a { color: var(--primary); text-decoration: none; font-weight: bold; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="hero">
+            <div class="hero-badge">ACCESS PROTOCOL V1</div>
+            <h1>NEED ACCESS?</h1>
+            <p>System secured. You need a verified wallet address to get in. No key, no entry.</p>
+        </div>
+
+        <!-- SECTION 1: APA ITU WALLET -->
+        <div class="info-card">
+            <span class="info-icon">🔑</span>
+            <h3>What's a Wallet?</h3>
+            <p>It's just your digital key. We don't ask for money or your private key.</p>
+            <p>We only scan your <span class="highlight">Public Address</span> to check if you're whitelisted on the server.</p>
+            <p class="warn">⚠️ SAFETY TIP: Use a burner/dummy wallet if you want to stay lowkey.</p>
+        </div>
+
+        <!-- SECTION 2: CARA DAFTAR -->
+        <div class="info-card" style="border-color: #AB9FF2;">
+            <span class="info-icon">📝</span>
+            <h3>How to Get Whitelisted</h3>
+            <p>1. Download a Wallet App (See device guide below).</p>
+            <p>2. Copy your <strong>Address</strong> (Starts with 0x... or random chars).</p>
+            <p>3. Send your Address to Admin via DM.</p>
+            <a href="https://instagram.com/mqrbxn" target="_blank" class="btn-dm">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                DM @mqrbxn
+            </a>
+        </div>
+
+        <!-- SECTION 3: PANDUAN DEVICE -->
+        <h2>📲 Device Setup</h2>
+        <div class="device-grid">
+            
+            <!-- HP (Android/iOS) -->
+            <div class="device-box">
+                <div class="device-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Mobile (Android / iPhone)
+                </div>
+                <ul class="step-list">
+                    <li>Download <strong>MetaMask</strong> App.</li>
+                    <li>Create new wallet (It's free). Save your pass.</li>
+                    <li><strong>DO NOT</strong> use Chrome/Safari. Won't work.</li>
+                    <li>Open MetaMask App -> Click <strong>Browser</strong> menu (Globe icon).</li>
+                    <li>Type our website URL inside MetaMask browser.</li>
+                    <li>Hit "Login" -> Confirm signature.</li>
+                </ul>
+            </div>
+
+            <!-- Laptop/PC -->
+            <div class="device-box">
+                <div class="device-title">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Laptop / Desktop
+                </div>
+                <ul class="step-list">
+                    <li>Use Chrome, Edge, or Brave.</li>
+                    <li>Install <strong>MetaMask</strong> or <strong>Phantom</strong> Extension.</li>
+                    <li>Create new wallet inside extension.</li>
+                    <li>Refresh this page.</li>
+                    <li>Click "Login" -> Pop-up appears -> Click "Sign/Connect".</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- TOMBOL LOGIN LANGSUNG KE VERCEL -->
+        <a href="https://beenonexam.vercel.app" class="btn-action">GOT IT? LOGIN NOW 🔐</a>
 
         <div class="footer">
             <p>System by <a href="https://github.com/ghaffarsyafiq-arch" target="_blank">Sir Yaeon</a> x B$4BE!N</p>
